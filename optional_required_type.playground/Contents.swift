@@ -9,7 +9,7 @@ class Person{
     
     func printPersonInfo() -> (){
         if(secondName != nil){
-            print("\(firstName) \(secondName)  \(lastName) ")
+            print("\(firstName) \(secondName ?? "")  \(lastName) ")
         }else{
             print("\(firstName) \(secondName ?? "") \(lastName) ")
         }
